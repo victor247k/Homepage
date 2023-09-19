@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Exo+2&family=Poppins:wght@400;600&display=swap');
+    </style>
+    <link rel="stylesheet" href="../styles/page1.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>My Homepage</title>
+</head>
+<body>
+    <!-- header: 
+            link to home page,
+            nav bar
+                links to: 
+                    hobbys page, 
+                        header ^
+                        progressbar
+                        main: 
+                            hobbys + images + a bit of info
+                        sidebar (on big screens): a list of hobbys
+                        footer ^
+                    achievments page,
+                        header ^,
+                        main:
+                            title, a bit of info, date, image(proof)
+                        footer ^
+                    gallery page
+                        header ^ 
+                        main: 
+                            title: Gallery:
+                                memory lane images or something like that;
+                        footer ^
+                    
+        main:
+            hero:
+                image, name, about me
+            social media links
+            sections:
+                (call to action about other pages + images)
+                hobbys, achievments, gallery
+
+        footer:
+            copyright, logo, cool canvas bg
+
+
+        color scheme:
+            accent: #00ADB5
+            primary-dark: #3A4750
+            secondary: #302841
+            text: #EEEEEE
+
+        images:
+            myself
+            my name as Logo
+            backgrouds (something to fill the color scheme)
+
+        icons:
+            social media
+            arrows
+            ...
+        
+        fonts:
+            accent: Exo2
+            main: Poppins
+
+        music:
+            https://youtu.be/xWKyW0DJn8c?si=JOgbvKhMXm296wJn
+
+    -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand logo" href="page1.html">Spinei Victor</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="text-section">
+                <h1>Hello, I am <span>Victor</span></h1>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque enim blanditiis quasi impedit iusto, veritatis quibusdam dolorum nisi id culpa!</p>
+            </div>
+        </section>
+        <section id="socials">
+            <!-- image carousel of all of my social media profiles + some info of them -->
+
+        </section>
+        <article id="hobbys">
+            <!-- a section with a cta to the hobbys page -->
+            <div class="text-section">
+                <h2>Hobbys</h2>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam neque, inventore fugit sequi error quae iusto tempora ab veniam placeat?</p>
+                <a href="" class="cta">check it out</a>
+            </div>
+            <img src="" alt="a image of a hobby">
+        </article>
+        <article id="achievments">
+            <!-- a section with cta to the achievments page -->
+            <div class="text-section">
+                <h2>What I am proud I have done...</h2>
+                <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, ad.</p>
+                <a href="" class="cta">check it out</a>
+            </div>
+            <img src="" alt="achievments icon">
+        </article>
+        <article id="gallery">
+            <!-- a page with cta to a page with images -->
+            <div class="text-section">
+                <h2>Cool photos...</h2>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, repellat!</p>
+                <a href="" class="cta">check it out</a>
+            </div>
+            <img src="" alt="gallery icon">
+        </article>
+    </main>
+    <footer>
+<!-- https://www.youtube.com/watch?v=gvGfgCcfAEg&ab_channel=Hyperplexed -->
+<!-- https://youtu.be/D_BPilf_F8k?si=yb-uYEynO1BL_98l -->
+<!-- https://youtu.be/5MUsKgU6i0I?si=AA1CDoYCpbYvsVop -->
+        <canvas id="footercanv"></canvas>
+        <container>
+            <p class="copyrigth">Copyright &#169; <span id="year">2023</span> <a href="#">Spinei Victor</a></p>
+            <img src="" alt="logo">
+        </container>
+    </footer>
+    <script src="https://kit.fontawesome.com/09c573bc29.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
